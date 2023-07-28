@@ -1,6 +1,6 @@
 {
-  "name": "@bornlogic/sbelte",
-  "version": "0.0.1",
+  "name": "@bornlogic/sbelteui",
+  "version": "0.0.0",
   "license": "MIT",
   "type": "module",
   "scripts": {
