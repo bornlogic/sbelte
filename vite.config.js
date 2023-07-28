@@ -6,7 +6,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/main.js',
-      name: 'sbelte',
+      name: 'sbelteui',
+      formats: ['es', 'umd'],
+      fileName: (format) => `sbelteui.${format}.js`,
     }
   },
   plugins: [svelte({
