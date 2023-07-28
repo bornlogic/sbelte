@@ -21,5 +21,7 @@
       "import": "./dist/sbelteui.es.js",
       "require": "./dist/sbelteui.umd.js"
     }
-  }
+  },
+  "main": "./dist/sbelteui.umd.js",
+  "module": "./dist/sbelteui.es.js"
 }
