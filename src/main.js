@@ -1,1 +1,1 @@
-export * from './lib/Counter.svelte'  
+export { default as LoginButton } from './lib/loginButton.svelte'  

@@ -23,5 +23,8 @@
     }
   },
   "main": "./dist/sbelteui.umd.js",
-  "module": "./dist/sbelteui.es.js"
+  "module": "./dist/sbelteui.es.js",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
 }
