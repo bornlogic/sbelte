@@ -14,12 +14,18 @@
   let content = states.idle;
 
   const handleClick = () => {
+    if (content === states.sending) return;
     content = states.sending;
     redirectToLoginUrl(clientId, redirectUri, scopes);
   };
 </script>
 
-<button type="button" on:click={handleClick}>{content}</button>
+<button
+  aria-label="login button"
+  class:loading={content === states.sending}
+  type="button"
+  on:click={handleClick}>{content}</button
+>
 
 <style>
   button {
@@ -32,6 +38,10 @@
     cursor: pointer;
     inline-size: -webkit-fill-available;
     outline: rgb(51, 51, 51) auto 1px;
+  }
+
+  .loading {
+    cursor: wait;
   }
 
   :where(button, input):where(:not(:active)):focus-visible {
