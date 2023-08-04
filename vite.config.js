@@ -8,12 +8,12 @@ export default defineConfig({
       entry: './src/main.js',
       name: 'sbelteui',
       formats: ['es', 'umd'],
-      fileName: (format) => `sbelteui.${format}.js`,
+      fileName: (format) => `sbelteui.${format}.js`
     }
   },
   plugins: [svelte({
     compilerOptions: {
-      customElement: true,
+      customElement: true
     }
-  })],
+  })]
 })
