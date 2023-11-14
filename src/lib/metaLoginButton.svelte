@@ -5,6 +5,8 @@
 <script>
 // @ts-nocheck
 
+  import { onMount } from "svelte";
+
   export let appId;
   export let scopes;
 
@@ -14,13 +16,18 @@
   };
   let content = states.idle;
 
-  window.fbAsyncInit = function() {
+  onMount(async()=>{
+    window.fbAsyncInit = function() {
     FB.init({
       appId            : appId,
       xfbml            : true,
       version          : 'v12.0'
     });
   };
+
+  })
+
+  
 
   function statusChangeCallback(response) {   
    
