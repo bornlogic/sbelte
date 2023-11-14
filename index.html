@@ -1,17 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svelte 🍊</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + Svelte</title>
-</head>
+  <body>
+    <script type="module" src="/src/main.js"></script>
 
-<body>
-  <script type="module" src="/src/main.js"></script>
-  <sbelte-login clientId="0101-0008-0013-00000015" redirectUri="https://app.bornlogic.com/login/callback"
-    scopes='["email", "profile" , "openid" , "graph_api_access" ]' />
-</body>
-
+    <!-- <sbelte-login
+      clientId="0101-0008-0013-00000015"
+      redirectUri="https://app.bornlogic.com/login/callback"
+      scopes='["email", "profile" , "openid" , "graph_api_access" ]'
+    /> -->
+    <meta-sbelte-login
+      appId="295902582826709"
+      scopes="ads_management,ads_read,read_insights,email,pages_manage_engagement,pages_read_engagement,pages_manage_metadata,pages_manage_posts,read_insights,business_management"
+    />
+  </body>
 </html>
